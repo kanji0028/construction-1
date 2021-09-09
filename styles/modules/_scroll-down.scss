@@ -1,0 +1,58 @@
+.scroll-dwn {
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+  left: 46%;
+  bottom: -5%;
+  z-index: 2;
+  padding: 10px 10px 110px;
+  overflow: hidden;
+  color: #FFF !important;
+  font-size: 12px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  writing-mode: vertical-lr;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: #FFF;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: rgba(253, 253, 253, 0.4);
+  }
+
+  // &::after {
+  //   animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+  // }
+
+  &::after {
+    height: 30px;
+    animation: sdl 1.8s ease infinite;
+  }
+}
+
+@keyframes sdl {
+  0% {
+    transform: translateY(-70px);
+  }
+
+  50%,
+  100% {
+    transform: translateY(30px);
+  }
+}

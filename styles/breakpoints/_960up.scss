@@ -1,0 +1,331 @@
+.c-txt-sm {
+  font-size: 18px;
+}
+
+.c-txt-md {
+  font-size: 24px;
+}
+
+.c-head01 {
+  & span {
+    font-size: 20px;
+  }
+
+  & p {
+    font-size: 26px;
+  }
+}
+
+.m-button-normal {
+  font-size: 2vw;
+  width: 40vw;
+
+  & a {
+    height: 8vw;
+  }
+}
+
+.btn-topicpath {
+  font-size: 22px;
+}
+
+//.p-header
+.p-header {
+  .l-menu-sp-button {
+    display: none;
+  }
+
+  & .logo {
+    position: fixed;
+    top: 27px;
+    left: 40px;
+  }
+
+  & .pc-menu {
+    position: fixed;
+    top: 35px;
+    right: 0;
+    z-index: 3000;
+
+    & .pc-nav {
+      &__item {
+        font-size: 18px;
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+//.p-mv 
+.p-mv {
+  & .scroll-dwn {
+    left: 50%;
+    bottom: 0;
+  }
+}
+
+//.contents-nav 
+.contents-nav {
+  & .p-index {
+    padding: 0 7vw;
+
+    &__title {
+      font-size: 22px;
+      padding-bottom: 26px;
+
+      &::after {
+        right: 1vw;
+        top: 24px;
+      }
+    }
+
+    &__photo {
+      height: 250px;
+    }
+  }
+}
+
+//.p-news 
+.p-news {
+  & h2 {
+    font-size: 28px;
+  }
+
+  &__date {
+    font-size: 22px;
+  }
+
+  &__item__title {
+    font-size: 22px;
+  }
+
+  &__list {
+    & li {
+      & a {
+        padding: 3vw 5vw;
+      }
+    }
+  }
+}
+
+//.p-open-time
+.p-open-time {
+  &__title {
+    font-size: 28px;
+  }
+
+  &__date {
+    font-size: 20px;
+  }
+
+  & th,
+  & td {
+    font-size: 20px;
+
+    & .open {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+//.p-access 
+.p-access {
+  padding: 0 7vw;
+
+  & .m-heading-normal {
+    font-size: 28px;
+  }
+
+  & .m-block-access {
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__description {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
+
+//.p-footer
+.p-footer {
+  & address {
+    & p {
+      font-size: 20px;
+    }
+
+    & span {
+      font-size: 22px;
+      padding-left: 35px;
+
+      &::before {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
+
+// * * * * * * * * * first-page * * * * * * 
+.first-wrapper {
+  & .fs-message {
+    &__button {
+      text-align: right;
+
+      & a {
+        font-size: 20px;
+      }
+    }
+
+    & .u-text-smaller {
+      font-size: 22px;
+    }
+
+    & .u-text-bold {
+      font-size: 26px;
+    }
+  }
+
+  & .fs-promise {
+    &__desc {
+      & .num-tit {
+        & i {
+          font-size: 5vw;
+        }
+
+        & span {
+          padding-left: 2vw;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__block {
+      margin-bottom: 10vw;
+    }
+  }
+
+  & .fa-contents {
+    & .fa-gallery {
+      &__name {
+        font-size: 24px;
+      }
+
+      &__list {
+        & li {
+          height: 260px;
+        }
+      }
+
+    }
+  }
+}
+
+// * * * * * * * * * faq-page * * * * * * 
+.faq-wrapper {
+  .faq-contents {
+    .faq {
+      &__title {
+        margin-bottom: 5vw;
+      }
+
+      &__block {
+
+        & dt,
+        & dd {
+          & .c-txt-md {
+            font-size: 24px;
+          }
+        }
+      }
+
+      & .c-title {
+        font-size: 26px;
+      }
+
+      & .c-txtarea01 {
+        margin-bottom: 15vw;
+
+        & .c-txt-sm {
+          font-size: 20px;
+        }
+      }
+
+
+    }
+  }
+}
+
+// * * * * * * * * * recruit-page * * * * * * 
+.contents-recruit {
+  & .recruit {
+    &-message {
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__block {
+        width: 31%;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 5vw;
+    }
+
+  }
+
+  .c-table01 {
+    td {
+      line-height: 2;
+      font-size: 1rem;
+    }
+  }
+}
+
+//* * * * * * * news-page * * * * * * *   
+.c-news {
+  margin-top: 15vw;
+
+  &__link {
+    padding: 4vw;
+
+    & span,
+    & p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// * * * * * * * * * news-sl-page * * * * * * 
+.c-news-sl {
+  padding: 10vw;
+
+  &__contents {
+    padding: 10vw 0;
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  & .more-link {
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+  }
+
+  &__date {
+    font-size: 1.4rem;
+  }
+}
